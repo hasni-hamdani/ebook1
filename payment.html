@@ -70,34 +70,6 @@
       font-size: 0.85rem;
     }
 
-    .offer-box {
-      background: #111;
-      border: 1px solid #333;
-      border-radius: 16px;
-      padding: 1.7rem;
-      margin-bottom: 1.8rem;
-      line-height: 1.9;
-    }
-
-    .offer-box h2 {
-      color: var(--primary);
-      font-size: 1.3rem;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-
-    .offer-price {
-      background: rgba(255,127,17,0.15);
-      border: 1px solid rgba(255,127,17,0.35);
-      padding: 0.8rem 1rem;
-      border-radius: 12px;
-      margin-bottom: 1rem;
-      text-align: center;
-      color: var(--primary);
-      font-weight: bold;
-      font-size: 1rem;
-    }
-
     .steps-box {
       background: #111;
       border: 1px solid #222;
@@ -214,36 +186,26 @@
   <main>
     <div class="container">
 
-      <!-- URGENCY + OFFER -->
-      <div class="offer-box">
-        <h2>🔥 عرض 3 أيام فقط – من 3500 دج إلى 1500 دج</h2>
-        <div class="offer-price">
-          العرض صالح فقط: الثلاثاء – الأربعاء – السبت
-        </div>
-        <p style="color:var(--text-muted); text-align:center;">
-          هذا التخفيض غير متكرر — الهدف أن تبدأ اليوم بلا تأجيل.
-        </p>
-      </div>
-
       <!-- PAYMENT INSTRUCTIONS -->
       <div class="steps-box">
-        <h3> خطوات الدفع</h3>
+        <h3>سعر الكتاب: 3500 دج</h3>
 
         <div class="payment-method">
-          BaridiMob  
+          الدفع عبر BaridiMob  
           <span>00799999002587476952</span>
         </div>
 
         <div class="payment-method">
-          CCP  
-          <span>52  0025874769 </span>
+          الدفع عبر CCP  
+          <span>52  0025874769</span>
         </div>
 
-        <p style="color:var(--text-muted); margin-top:1rem;">
-          ✔ ادفع 1500 دج  
+        <p style="color:var(--text-muted); margin-top:1rem; line-height:2;">
+          ✔ ادفع 3500 دج  
           ✔ خذ Screenshot لعملية الدفع  
-          ✔ املأ معلوماتك أسفل ثم اضغط على زر WhatsApp  
-          ✔ أرسل لي Screenshot مباشرة  
+          ✔ املأ معلوماتك أسفل  
+          ✔ اضغط على زر WhatsApp  
+          ✔ وأرسل لي Screenshot مباشرة
         </p>
       </div>
 
@@ -307,12 +269,12 @@
       const wa = "https://wa.me/213559947488?text=" +
         encodeURIComponent(
           "السلام عليكم كوتش 🌟\n\n" +
-          "أرسلت لك معلوماتي لإثبات الدفع:\n\n" +
+          "هذه معلوماتي الخاصة بإثبات الدفع:\n\n" +
           "👤 الاسم: " + name + "\n" +
           "📞 الهاتف: " + phone + "\n" +
           (email ? "📧 الإيميل: " + email + "\n" : "") +
-          "\n📸 سوف أرسل لك الآن Screenshot لإثبات الدفع.\n" +
-          "أريد الحصول على كتاب: زيد و زنك و بدل جسمك 💪🔥"
+          "\n⚡ قمت بدفع 3500 دج وسأرسل لك الآن Screenshot.\n" +
+          "أريد الحصول على كتاب: زيد و نك و بدل جسمك 💪🔥"
         );
 
       window.location.href = wa;
@@ -321,4 +283,3 @@
 
 </body>
 </html>
-
